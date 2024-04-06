@@ -100,7 +100,11 @@ img
   justify-content: start
   grid-template-areas: "a b"
   gap: 25px 50px
-  // &:nth-child()
+  &:nth-child(even)
+      justify-content: end
+      grid-template-areas: "b a"
+      .advisor-name
+        text-align: right
 
   &-photo
     width: 100%
@@ -116,6 +120,8 @@ img
       object-fit: cover
 
   &__col
+    width: 100%
+    max-width: 600px
     grid-area: b
 
   &-name
